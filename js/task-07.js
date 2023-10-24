@@ -5,7 +5,7 @@
 // <span id="text">Abracadabra!</span>
 
 const input = document.querySelector("#font-size-control");
-input.addEventListener("change", handleInput);
+input.addEventListener("input", handleInput);
 
 const a = document.querySelector("#text");
 

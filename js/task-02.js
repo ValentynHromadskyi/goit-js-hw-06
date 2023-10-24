@@ -13,11 +13,13 @@ const ingredients = [
   "Herbs",
   "Condiments",
 ];
-
+let elements = [];
 const list = document.querySelector("#ingredients");
 ingredients.map((ingredient) => {
   const li = document.createElement("li");
   li.textContent = ingredient;
   li.classList.add("item");
-  list.append(li);
+  elements.push(li);
+  // list.append(li);
 });
+list.append(...elements);
